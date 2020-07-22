@@ -1,0 +1,6 @@
+framework module Pods_AuthTextField_Tests {
+  umbrella header "Pods-AuthTextField_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

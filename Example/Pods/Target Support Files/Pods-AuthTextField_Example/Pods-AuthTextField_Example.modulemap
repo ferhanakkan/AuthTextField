@@ -1,0 +1,6 @@
+framework module Pods_AuthTextField_Example {
+  umbrella header "Pods-AuthTextField_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "AuthTextField",
+  "version": "0.1.0",
+  "summary": "A short description of AuthTextField.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ferhanakkan/AuthTextField",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ferhanakkan": "ferhanakkan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ferhanakkan/AuthTextField.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AuthTextField/Classes/**/*"
+}

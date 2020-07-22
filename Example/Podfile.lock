@@ -1,0 +1,16 @@
+PODS:
+  - AuthTextField (0.1.0)
+
+DEPENDENCIES:
+  - AuthTextField (from `../`)
+
+EXTERNAL SOURCES:
+  AuthTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AuthTextField: 199f9a7ef5eeb29be32e69784fdaf0286fb6aa2b
+
+PODFILE CHECKSUM: aecf22aa85d01aa5492aae15f89757338a369aa2
+
+COCOAPODS: 1.9.3
