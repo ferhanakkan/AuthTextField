@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AuthTextField'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'AuthTextField is a easy solution for your auth screen. Include lots of template and animations.'
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ferhanakkan' => 'ferhanakkan@gmail.com' }
   s.source           = { :git => 'https://github.com/ferhanakkan/AuthTextField.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://www.linkedin.com/in/ferhanakkan/'
+   s.social_media_url = 'https://www.linkedin.com/in/ferhanakkan/'
 
   s.ios.deployment_target = '12.0'
   s.swift_version = "5.0"
@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
       "ios": "12.0"
   }
 
-  s.source_files = 'AuthTextField/Classes/**/*'
-  s.resource = 'AuthTextField/Resources/*'
+  s.source_files = 'Source/*.{h,m,swift}'
+  s.resource = 'Example/Pods/Resources/**/*'
   
 #   s.resource_bundles = {
 #     'AuthTextField' => ['AuthTextField/Assets/*.png']

@@ -258,8 +258,8 @@ extension AuthField {
             animation.duration = 0.07
             animation.repeatCount = 4
             animation.autoreverses = true
-            animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 10, y: self.center.y))
-            animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 10, y: self.center.y))
+            animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 5, y: self.center.y))
+            animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 5, y: self.center.y))
             layer.add(animation, forKey: "position")
         case .none:
             return
@@ -274,7 +274,7 @@ extension AuthField {
             centerConstraint.isActive = false
             topConstraint.isActive = true
             
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: 0.4, animations: {
                 self.layoutIfNeeded()
             }) { (_) in
                 
@@ -285,7 +285,7 @@ extension AuthField {
                 label.font = labelFontLarge
                 centerConstraint.isActive = true
                   topConstraint.isActive = false
-                UIView.animate(withDuration: 1, animations: {
+                UIView.animate(withDuration: 0.4, animations: {
                     self.layoutIfNeeded()
                 }) { (_) in
                     print("Animation Completed!!!")
