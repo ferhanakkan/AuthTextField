@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AuthTextField'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AuthTextField.'
+  s.summary          = 'AuthTextField is a easy solution for your auth screen. Include lots of template and animations.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,23 +18,28 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+        'AuthTextField is a simple way to create auth screens with nice UI and animations. Its simple to use.'
+                        DESC
 
   s.homepage         = 'https://github.com/ferhanakkan/AuthTextField'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ferhanakkan' => 'ferhanakkan@gmail.com' }
   s.source           = { :git => 'https://github.com/ferhanakkan/AuthTextField.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  # s.social_media_url = 'https://www.linkedin.com/in/ferhanakkan/'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = "5.0"
+  s.platforms = {
+      "ios": "12.0"
+  }
 
   s.source_files = 'AuthTextField/Classes/**/*'
+  s.resource = 'AuthTextField/Resources/*'
   
-  # s.resource_bundles = {
-  #   'AuthTextField' => ['AuthTextField/Assets/*.png']
-  # }
+#   s.resource_bundles = {
+#     'AuthTextField' => ['AuthTextField/Assets/*.png']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

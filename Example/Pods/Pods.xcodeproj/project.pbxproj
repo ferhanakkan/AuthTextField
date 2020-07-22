@@ -10,12 +10,13 @@
 		10A43A120EB3620BAE83A0096F542122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		248618B91D075223AA4ABE1D22E4903F /* Pods-AuthTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F504B9683DC9099496B8321869100A07 /* Pods-AuthTextField_Example-dummy.m */; };
 		2DA14C2A2F94FF2DCD873B94F7CB64D8 /* Pods-AuthTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03621A44C57D4F4F5BE94ACDF0C71514 /* Pods-AuthTextField_Tests-dummy.m */; };
+		3691882B24C8C4FE008BA36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3691882A24C8C4FE008BA36C /* Assets.xcassets */; };
+		36ADCFF824C7BBB6009A9774 /* AuthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ADCFF724C7BBB6009A9774 /* AuthField.swift */; };
 		4758686653984958D4E6C9986CD47E7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		54162350195D3C1F8BC728184E233FE3 /* AuthTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 389FA94CC3CFA551FF5EECF204B015D9 /* AuthTextField-dummy.m */; };
 		92B3693F072DB6952C8E478C125018F7 /* Pods-AuthTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AED7B1E169D283F7F80EAD6600318A /* Pods-AuthTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93501DFEFAA45996F33B160CDABD1A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B2FF9DE0B54F320EF0A83365E3107B5F /* Pods-AuthTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 573FB9692ADB5C6AB795A092D32603B8 /* Pods-AuthTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3AD5D964677F98061440AA40ADF37EB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E14F23A4EE5809940FF0890500E9E5 /* ReplaceMe.swift */; };
 		FF834BE49217378775BECE8E9DF1D621 /* AuthTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EBB333955A269EE700BD9ABDF966016 /* AuthTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,12 +40,14 @@
 /* Begin PBXFileReference section */
 		03621A44C57D4F4F5BE94ACDF0C71514 /* Pods-AuthTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AuthTextField_Tests-dummy.m"; sourceTree = "<group>"; };
 		0812944304CD673AE9238388076D31C6 /* Pods-AuthTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AuthTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0FD3D1DEFD6D64EADCCF9D98CAFC1546 /* Pods_AuthTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AuthTextField_Tests.framework; path = "Pods-AuthTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD3D1DEFD6D64EADCCF9D98CAFC1546 /* Pods_AuthTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C2C31F18F9E86E5CCE3F7A522A60E8 /* Pods-AuthTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		172A1C097A219CAB99C190A5FA0476F1 /* Pods-AuthTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthTextField_Tests-Info.plist"; sourceTree = "<group>"; };
 		19963B7F7D968532889F23DEB7DFC84F /* AuthTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AuthTextField.modulemap; sourceTree = "<group>"; };
 		26A0770203DBEAACDDB1F516D3F42A39 /* Pods-AuthTextField_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthTextField_Example-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3691882A24C8C4FE008BA36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36ADCFF724C7BBB6009A9774 /* AuthField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthField.swift; sourceTree = "<group>"; };
 		389FA94CC3CFA551FF5EECF204B015D9 /* AuthTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AuthTextField-dummy.m"; sourceTree = "<group>"; };
 		39CAC45B33E9F28C85CBA2AEE4ADFB06 /* Pods-AuthTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AuthTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4B63274BD638EA81CA7494F12C8063A4 /* Pods-AuthTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AuthTextField_Example.modulemap"; sourceTree = "<group>"; };
@@ -52,20 +55,19 @@
 		573FB9692ADB5C6AB795A092D32603B8 /* Pods-AuthTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AuthTextField_Example-umbrella.h"; sourceTree = "<group>"; };
 		66E207C3DBDDB38628C840B89D9CA225 /* AuthTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AuthTextField-Info.plist"; sourceTree = "<group>"; };
 		6B2D5D4D381FA9EFBA9E31D4CFD7D2D6 /* Pods-AuthTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AuthTextField_Tests.modulemap"; sourceTree = "<group>"; };
-		7783175D21EF863169E14F473E2EE639 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7783175D21EF863169E14F473E2EE639 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		78573345C897FD2F2FC5A024F0EB4E95 /* Pods-AuthTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		817BBB8DACA1EE3C7D1EDDF4E0971526 /* Pods-AuthTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AuthTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
-		89CFCA7B8E5B239AE18B285B0AACDDA6 /* Pods_AuthTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AuthTextField_Example.framework; path = "Pods-AuthTextField_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CFCA7B8E5B239AE18B285B0AACDDA6 /* Pods_AuthTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A759DD9DD59D0F0D5E98D6DE380FC00 /* Pods-AuthTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AuthTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EBB333955A269EE700BD9ABDF966016 /* AuthTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuthTextField-umbrella.h"; sourceTree = "<group>"; };
 		A1EAB1D751166471CF61E0E3FD495A03 /* AuthTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AuthTextField.debug.xcconfig; sourceTree = "<group>"; };
 		AA32293FC3BC873B1808C1CB8A367F96 /* Pods-AuthTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AuthTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B61EDFAD8BD8EBD7031BAE2AE548F264 /* AuthTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AuthTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B61EDFAD8BD8EBD7031BAE2AE548F264 /* AuthTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AuthTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B93B492737E820147065268395AE89CA /* AuthTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AuthTextField.release.xcconfig; sourceTree = "<group>"; };
-		D38BDD33499B47296C356D9124FEE9BE /* AuthTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AuthTextField.framework; path = AuthTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7E14F23A4EE5809940FF0890500E9E5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = AuthTextField/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		DBA75E7D6D0C8EDF36FF76EB343D0FBA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D38BDD33499B47296C356D9124FEE9BE /* AuthTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBA75E7D6D0C8EDF36FF76EB343D0FBA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E33DA3C09008347EF311A113748E0F03 /* AuthTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuthTextField-prefix.pch"; sourceTree = "<group>"; };
 		F4AED7B1E169D283F7F80EAD6600318A /* Pods-AuthTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AuthTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F504B9683DC9099496B8321869100A07 /* Pods-AuthTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AuthTextField_Example-dummy.m"; sourceTree = "<group>"; };
@@ -115,6 +117,22 @@
 			);
 			name = "Pods-AuthTextField_Example";
 			path = "Target Support Files/Pods-AuthTextField_Example";
+			sourceTree = "<group>";
+		};
+		3691882924C8C4EF008BA36C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3691882A24C8C4FE008BA36C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36ADCFF624C7BBA2009A9774 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				36ADCFF724C7BBB6009A9774 /* AuthField.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		3E9ECF39772E01813778C89D20AAC704 /* Pod */ = {
@@ -169,7 +187,7 @@
 		C1F171D6A550BF285A8C9CFF4132F908 /* AuthTextField */ = {
 			isa = PBXGroup;
 			children = (
-				D7E14F23A4EE5809940FF0890500E9E5 /* ReplaceMe.swift */,
+				36ADCFF624C7BBA2009A9774 /* Source */,
 				3E9ECF39772E01813778C89D20AAC704 /* Pod */,
 				A414ECDE1703C246482B677409F43418 /* Support Files */,
 			);
@@ -180,6 +198,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
+				3691882924C8C4EF008BA36C /* Resources */,
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D57675172A43BE3840237FA2AFC527C7 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
@@ -317,6 +336,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					24663C0AC26AF38A346F10783C8D02F9 = {
+						DevelopmentTeam = 43THU6L26P;
+						LastSwiftMigration = 1160;
+					};
+					3FC1E61BF00FF8A6FEA4C0C90095D9EB = {
+						DevelopmentTeam = 43THU6L26P;
+					};
+					70A9FD6726186A7183D26F19FC0E8414 = {
+						DevelopmentTeam = 43THU6L26P;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -357,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3691882B24C8C4FE008BA36C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,8 +415,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36ADCFF824C7BBB6009A9774 /* AuthField.swift in Sources */,
 				54162350195D3C1F8BC728184E233FE3 /* AuthTextField-dummy.m in Sources */,
-				F3AD5D964677F98061440AA40ADF37EB /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,18 +443,19 @@
 			baseConfigurationReference = 4C90713765D8E97E2D034FAF04A028FB /* Pods-AuthTextField_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 43THU6L26P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AuthTextField_Example/Pods-AuthTextField_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AuthTextField_Example/Pods-AuthTextField_Example.modulemap";
@@ -444,18 +477,19 @@
 			baseConfigurationReference = AA32293FC3BC873B1808C1CB8A367F96 /* Pods-AuthTextField_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 43THU6L26P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AuthTextField_Tests/Pods-AuthTextField_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AuthTextField_Tests/Pods-AuthTextField_Tests.modulemap";
@@ -477,19 +511,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B93B492737E820147065268395AE89CA /* AuthTextField.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 43THU6L26P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/AuthTextField/AuthTextField-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AuthTextField/AuthTextField-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AuthTextField/AuthTextField.modulemap";
 				PRODUCT_MODULE_NAME = AuthTextField;
@@ -497,7 +533,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -553,13 +589,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -569,19 +604,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1EAB1D751166471CF61E0E3FD495A03 /* AuthTextField.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 43THU6L26P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/AuthTextField/AuthTextField-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AuthTextField/AuthTextField-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AuthTextField/AuthTextField.modulemap";
 				PRODUCT_MODULE_NAME = AuthTextField;
@@ -589,7 +626,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -601,18 +639,19 @@
 			baseConfigurationReference = 817BBB8DACA1EE3C7D1EDDF4E0971526 /* Pods-AuthTextField_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 43THU6L26P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AuthTextField_Example/Pods-AuthTextField_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AuthTextField_Example/Pods-AuthTextField_Example.modulemap";
@@ -681,7 +720,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -699,18 +738,19 @@
 			baseConfigurationReference = 39CAC45B33E9F28C85CBA2AEE4ADFB06 /* Pods-AuthTextField_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 43THU6L26P;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-AuthTextField_Tests/Pods-AuthTextField_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AuthTextField_Tests/Pods-AuthTextField_Tests.modulemap";
