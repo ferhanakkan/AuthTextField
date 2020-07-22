@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AuthTextField_Example' do
+  pod 'AuthTextField', :path => '../'
+
+  target 'AuthTextField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
