@@ -68,7 +68,7 @@ class ViewController: UIViewController {
 Firstly insert UIView object in your view than enter in identitiy inspector and change inside Custom Class -> Class to AuthField. Connect your UIView to ViewController.swift file.
 
 <p align="center">
-<img src='https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/identity.imageset/identity.png' width="200" />
+<img src='https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/identitiy.imageset/Screen%20Shot%202020-07-23%20at%2015.18.58.png' width="200" />
 </p>
 
 ```swift
