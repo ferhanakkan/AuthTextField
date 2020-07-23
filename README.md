@@ -90,6 +90,120 @@ class ViewController: UIViewController {
     
 }
 ```
+
+### Detail Usage
+
+#### Preset Input Types
+
+#### Animations 
+
+```swift
+import UIKit
+import AuthTextField
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var firstTextField: AuthField!
+    @IBOutlet weak var secondTextField: AuthField!
+    @IBOutlet weak var thirdTextField: AuthField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        firstTextField.inputType = .name
+        secondTextField.inputType = .name
+        thirdTextField.inputType = .name
+        
+        //Setting animation Preset animationType = .shake
+        
+        firstTextField.animationType = .shake
+        secondTextField.animationType = .pulse
+        thirdTextField.animationType = .flash
+    }
+    
+    @IBAction func validateButtonPressed(_ sender: Any) {
+        firstTextField.checkField()
+        secondTextField.checkField()
+        thirdTextField.checkField()
+    }
+    
+}
+```
+#### Password
+
+```swift 
+import UIKit
+import AuthTextField
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var passwordTextField: AuthField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        passwordTextField.inputType = .password
+    }
+    
+    @IBAction func validateButtonPressed(_ sender: Any) {
+        passwordTextField.checkField()
+    }
+    
+}
+``` 
+#### Email Validation
+
+If input type selected e-mail when you gonna validate textfield it will be automatically check e-mail format.
+
+class ViewController: UIViewController {
+```swift 
+import UIKit
+import AuthTextField
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var emailTextField: AuthField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        emailTextField.inputType = .email
+    }
+    
+    @IBAction func validateButtonPressed(_ sender: Any) {
+        emailTextField.checkField()
+    }
+    
+}
+``` 
+
+#### Create Custom AuthField
+
+```swift
+import UIKit
+import AuthTextField
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var customFirstTextField: AuthField!
+    @IBOutlet weak var customSecondTextField: AuthField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        customFirstTextField.inputType = .custom
+        customFirstTextField.setCustomAuthField(isOptional: true, animationType: .flash, noticeColor: .red, textColor: .lightGray, textfieldInputColor: .purple, textFieldInputFont: .systemFont(ofSize: 15), titleLabelSmallSizeFont: .systemFont(ofSize: 12), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 15), placeHolderText: "Custom First Optional", requiredMinCharacter: 1)
+
+        customSecondTextField.inputType = .custom
+        customSecondTextField.setCustomAuthField(isOptional: false, animationType: .shake, noticeColor: .purple, textColor: .blue, textfieldInputColor: .blue, textFieldInputFont: .boldSystemFont(ofSize: 20), titleLabelSmallSizeFont: .systemFont(ofSize: 15), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 20), placeHolderText: "Custom Second Non Optional", requiredMinCharacter: 3)
+    }
+    
+    @IBAction func validateButtonPressed(_ sender: Any) {
+        customFirstTextField.checkField()
+        customSecondTextField.checkField()
+    }
+    
+}
+
+```
+
 ## Author
 
 ferhanakkan, ferhanakkan@gmail.com
@@ -97,3 +211,6 @@ ferhanakkan, ferhanakkan@gmail.com
 ## License
 
 AuthTextField is available under the MIT license. See the LICENSE file for more info.
+
+
+

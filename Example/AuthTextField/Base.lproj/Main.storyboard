@@ -1,46 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5KA-sH-jEP">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="Uvo-if-OCa">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AuthTextField_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5KA-sH-jEP" customClass="ViewController" customModule="AuthTextField_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="jzk-z7-Zp7"/>
+                        <viewControllerLayoutGuide type="bottom" id="9qd-6n-Dxo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="jcz-pE-aUt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJt-3d-uwl" customClass="AuthField" customModule="AuthTextField">
-                                <rect key="frame" x="36" y="20" width="303" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4n-XM-Cpr">
+                                <rect key="frame" x="36" y="597" width="303" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RZg-9s-IG1"/>
+                                    <constraint firstAttribute="height" constant="50" id="8Ve-zg-rvc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Validate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="validateButton:" destination="5KA-sH-jEP" eventType="touchUpInside" id="7Me-0Q-JWv"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aO6-31-ptv" customClass="AuthField" customModule="AuthTextField">
+                                <rect key="frame" x="36" y="20" width="303" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZMI-zt-SqV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9A-Eb-sIi" customClass="AuthField" customModule="AuthTextField">
+                                <rect key="frame" x="36" y="90" width="303" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="5Du-t6-cW0"/>
+                                    <constraint firstAttribute="height" constant="50" id="cSj-D2-uJP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9m-GO-ckq" customClass="AuthField" customModule="AuthTextField">
+                                <rect key="frame" x="36" y="160" width="303" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="HDt-08-2P4"/>
+                                    <constraint firstAttribute="height" constant="50" id="LfL-bW-pAz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1d-U6-DSA" customClass="AuthField" customModule="AuthTextField">
+                                <rect key="frame" x="36" y="230" width="303" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AhH-al-8b2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="rqR-5g-aIG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceO-sZ-DaH" customClass="AuthField" customModule="AuthTextField">
+                                <rect key="frame" x="36" y="300" width="303" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kN5-YZ-0sB"/>
+                                    <constraint firstAttribute="height" constant="50" id="tvr-Mz-SwU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJ9-Hj-whD" customClass="AuthField" customModule="AuthTextField">
+                                <rect key="frame" x="36" y="370" width="303" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="huT-YY-Qau"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="w1P-gZ-65T"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CJt-3d-uwl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="3X5-Bq-ifr"/>
-                            <constraint firstItem="CJt-3d-uwl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="GWW-qt-uuP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CJt-3d-uwl" secondAttribute="trailing" constant="20" id="iaR-bS-1DA"/>
+                            <constraint firstItem="L1d-U6-DSA" firstAttribute="leading" secondItem="jcz-pE-aUt" secondAttribute="leadingMargin" constant="20" id="4Ci-Kj-OSE"/>
+                            <constraint firstItem="H9m-GO-ckq" firstAttribute="top" secondItem="Z9A-Eb-sIi" secondAttribute="bottom" constant="20" id="517-bS-DLY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z9A-Eb-sIi" secondAttribute="trailing" constant="20" id="BcC-7h-W1E"/>
+                            <constraint firstItem="L1d-U6-DSA" firstAttribute="top" secondItem="H9m-GO-ckq" secondAttribute="bottom" constant="20" id="C54-XS-lFS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ceO-sZ-DaH" secondAttribute="trailing" constant="20" id="CCz-Ha-Jwy"/>
+                            <constraint firstItem="H4n-XM-Cpr" firstAttribute="leading" secondItem="jcz-pE-aUt" secondAttribute="leadingMargin" constant="20" id="D9x-jw-OxQ"/>
+                            <constraint firstItem="Z9A-Eb-sIi" firstAttribute="leading" secondItem="jcz-pE-aUt" secondAttribute="leadingMargin" constant="20" id="Egt-CF-hBv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pJ9-Hj-whD" secondAttribute="trailing" constant="20" id="IWy-WR-ydc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L1d-U6-DSA" secondAttribute="trailing" constant="20" id="K20-1Y-nNx"/>
+                            <constraint firstItem="aO6-31-ptv" firstAttribute="leading" secondItem="jcz-pE-aUt" secondAttribute="leadingMargin" constant="20" id="MLs-Fo-0Ey"/>
+                            <constraint firstItem="Z9A-Eb-sIi" firstAttribute="top" secondItem="aO6-31-ptv" secondAttribute="bottom" constant="20" id="MNX-ws-N6n"/>
+                            <constraint firstItem="ceO-sZ-DaH" firstAttribute="leading" secondItem="jcz-pE-aUt" secondAttribute="leadingMargin" constant="20" id="ZCC-Hj-DrQ"/>
+                            <constraint firstItem="pJ9-Hj-whD" firstAttribute="top" secondItem="ceO-sZ-DaH" secondAttribute="bottom" constant="20" id="d56-lV-IQi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aO6-31-ptv" secondAttribute="trailing" constant="20" id="e2v-dn-CEQ"/>
+                            <constraint firstItem="9qd-6n-Dxo" firstAttribute="top" secondItem="H4n-XM-Cpr" secondAttribute="bottom" constant="20" id="fJ0-CH-dGU"/>
+                            <constraint firstItem="H9m-GO-ckq" firstAttribute="leading" secondItem="jcz-pE-aUt" secondAttribute="leadingMargin" constant="20" id="gzK-er-qGu"/>
+                            <constraint firstItem="ceO-sZ-DaH" firstAttribute="top" secondItem="L1d-U6-DSA" secondAttribute="bottom" constant="20" id="hAo-No-xCg"/>
+                            <constraint firstItem="aO6-31-ptv" firstAttribute="top" secondItem="jzk-z7-Zp7" secondAttribute="bottom" constant="20" id="lux-dB-TO9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H9m-GO-ckq" secondAttribute="trailing" constant="20" id="mKk-DV-kG4"/>
+                            <constraint firstItem="pJ9-Hj-whD" firstAttribute="leading" secondItem="jcz-pE-aUt" secondAttribute="leadingMargin" constant="20" id="vr8-tc-zre"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H4n-XM-Cpr" secondAttribute="trailing" constant="20" id="w3k-cU-uxx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameTextField" destination="CJt-3d-uwl" id="yDI-EY-ojG"/>
+                        <outlet property="customTextField" destination="pJ9-Hj-whD" id="W9o-qU-qVg"/>
+                        <outlet property="emailTextField" destination="L1d-U6-DSA" id="ZjC-gI-3MY"/>
+                        <outlet property="nameTextField" destination="aO6-31-ptv" id="hGe-dk-phV"/>
+                        <outlet property="passwordTextField" destination="ceO-sZ-DaH" id="kF7-ob-MZB"/>
+                        <outlet property="phoneTextField" destination="H9m-GO-ckq" id="155-jb-Gva"/>
+                        <outlet property="surnameTextField" destination="Z9A-Eb-sIi" id="GXE-Yt-QFC"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymF-gM-Psk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="133"/>
+            <point key="canvasLocation" x="-444" y="97"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

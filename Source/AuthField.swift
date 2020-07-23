@@ -47,6 +47,8 @@ public class AuthField: UIView {
         }
     }
     
+    private var minCharacter: Int = 3
+    
     private var eyeImage: UIImage? = UIImage(named: "eye", in: Bundle(for: AuthField.self), compatibleWith: nil)
     
     private var eyeHiddenImage: UIImage? = UIImage(named: "eyeHidden", in: Bundle(for: AuthField.self), compatibleWith: nil)
@@ -161,7 +163,7 @@ extension AuthField {
                 self.textField.keyboardType = .emailAddress
             case .phone:
                 label.text = "Phone"
-                self.textField.textContentType = .telephoneNumber
+                self.textField.keyboardType = .numberPad
             default:
                 return
             }
@@ -311,31 +313,42 @@ extension AuthField {
     public func checkField() -> Bool {
         
         if isOptional {
+            borderView.layer.borderColor = textColor.cgColor
+            self.label.textColor = textColor
+        } else if textField.text!.count < minCharacter {
+            borderView.layer.borderColor = noticeBorderColor.cgColor
+            self.label.textColor = noticeBorderColor
+        } else {
+            borderView.layer.borderColor = textColor.cgColor
+            self.label.textColor = textColor
+        }
+        
+        if isOptional {
             return true
         } else {
             switch inputType {
             case .name:
-                textField.text!.count > 3 ? nil : showAnimation()
-                return textField.text!.count > 3
+                textField.text!.count >= minCharacter ? nil : showAnimation()
+                return textField.text!.count >= minCharacter
             case .surname:
-                textField.text!.count > 3 ? nil : showAnimation()
-                return textField.text!.count > 3
+                textField.text!.count >= minCharacter ? nil : showAnimation()
+                return textField.text!.count >= minCharacter
             case .email:
-                textField.text!.count > 3 ? nil : showAnimation()
+                textField.text!.count >= minCharacter ? nil : showAnimation()
                 validateEmail(enteredEmail: textField.text!) ? nil : showAnimation()
                 return validateEmail(enteredEmail: textField.text!)
             case .password:
-                textField.text!.count > 3 ? nil : showAnimation()
-                return textField.text!.count > 3
+                textField.text!.count >= minCharacter ? nil : showAnimation()
+                return textField.text!.count >= minCharacter
             case .none:
-                textField.text!.count > 3 ? nil : showAnimation()
-                return textField.text!.count > 3
+                textField.text!.count >= minCharacter ? nil : showAnimation()
+                return textField.text!.count >= minCharacter
             case .phone:
-                textField.text!.count > 5 ? nil : showAnimation()
-                return textField.text!.count > 5
+                textField.text!.count >= minCharacter ? nil : showAnimation()
+                return textField.text!.count >= minCharacter
             case .custom:
-                textField.text!.count > 3 ? nil : showAnimation()
-                return textField.text!.count > 3
+                textField.text!.count >= minCharacter ? nil : showAnimation()
+                return textField.text!.count >= minCharacter
             }
         }
     }
@@ -346,7 +359,7 @@ extension AuthField {
 
 extension AuthField {
     
-    public func setCustomAuthField(isOptional: Bool, animationType: AnimationTypeSelection, noticeColor: UIColor, textColor: UIColor, textfieldInputColor: UIColor, textFieldInputFont: UIFont, titleLabelSmallSizeFont: UIFont, titleLabelLargeSizeFont: UIFont) {
+    public func setCustomAuthField(isOptional: Bool, animationType: AnimationTypeSelection, noticeColor: UIColor, textColor: UIColor, textfieldInputColor: UIColor, textFieldInputFont: UIFont, titleLabelSmallSizeFont: UIFont, titleLabelLargeSizeFont: UIFont, placeHolderText: String, requiredMinCharacter: Int) {
         
         self.inputType = .custom
         self.isOptional = isOptional
@@ -357,6 +370,8 @@ extension AuthField {
         self.textField.font = textFieldInputFont
         self.labelFontSmall = titleLabelSmallSizeFont
         self.labelFontLarge = titleLabelLargeSizeFont
+        self.label.text = placeHolderText
+        self.minCharacter = requiredMinCharacter
     }
     
 }

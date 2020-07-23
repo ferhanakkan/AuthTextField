@@ -7,21 +7,41 @@
 //
 
 
-//Programmatically usage
-
 import UIKit
 import AuthTextField
 
 class ViewController: UIViewController {
-    
+
 
     @IBOutlet weak var nameTextField: AuthField!
-    
+    @IBOutlet weak var surnameTextField: AuthField!
+    @IBOutlet weak var phoneTextField: AuthField!
+    @IBOutlet weak var emailTextField: AuthField!
+    @IBOutlet weak var passwordTextField: AuthField!
+    @IBOutlet weak var customTextField: AuthField!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.inputType = .name
+        surnameTextField.inputType = .surname
+        phoneTextField.inputType = .phone
+        emailTextField.inputType = .email
+        passwordTextField.inputType = .password
+
+        customTextField.inputType = .custom
+        customTextField.setCustomAuthField(isOptional: true, animationType: .flash, noticeColor: .blue, textColor: .orange, textfieldInputColor: .orange, textFieldInputFont: .boldSystemFont(ofSize: 15), titleLabelSmallSizeFont: .systemFont(ofSize: 12), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 15), placeHolderText: "Custom", requiredMinCharacter: 5)
+
     }
-    
+
+    @IBAction func validateButton(_ sender: UIButton) {
+        nameTextField.checkField()
+        surnameTextField.checkField()
+        phoneTextField.checkField()
+        emailTextField.checkField()
+        passwordTextField.checkField()
+        customTextField.checkField()
+    }
 }
 
 
@@ -40,4 +60,41 @@ class ViewController: UIViewController {
 //        nameTextfield.heightAnchor.constraint(equalToConstant: 50)
 //
 //    ])
+//}
+
+//
+//class ViewController: UIViewController {
+//
+//
+//    @IBOutlet weak var nameTextField: AuthField!
+//    @IBOutlet weak var surnameTextField: AuthField!
+//    @IBOutlet weak var phoneTextField: AuthField!
+//    @IBOutlet weak var emailTextField: AuthField!
+//    @IBOutlet weak var passwordTextField: AuthField!
+//    @IBOutlet weak var customTextField: AuthField!
+//
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        nameTextField.inputType = .name
+//        surnameTextField.inputType = .surname
+//        surnameTextField.animationType = .flash
+//        phoneTextField.inputType = .phone
+//        phoneTextField.animationType = .pulse
+//        emailTextField.inputType = .email
+//        passwordTextField.inputType = .password
+//
+//        customTextField.inputType = .custom
+//        customTextField.setCustomAuthField(isOptional: true, animationType: .flash, noticeColor: .blue, textColor: .orange, textfieldInputColor: .orange, textFieldInputFont: .boldSystemFont(ofSize: 15), titleLabelSmallSizeFont: .systemFont(ofSize: 12), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 15), placeHolderText: "Custom", requiredMinCharacter: 5)
+//
+//    }
+//
+//    @IBAction func validateButton(_ sender: UIButton) {
+//        nameTextField.checkField()
+//        surnameTextField.checkField()
+//        phoneTextField.checkField()
+//        emailTextField.checkField()
+//        passwordTextField.checkField()
+//        customTextField.checkField()
+//    }
 //}
