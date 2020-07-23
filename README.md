@@ -95,9 +95,44 @@ class ViewController: UIViewController {
 
 ### Detail Usage
 
-#### Preset Input Types
+#### Validation 
+
+You can check your textfield does give your requirements and it return you true false result.  If result is fault trigger animation.
+
+```swift
+
+import UIKit
+import AuthTextField
+
+class ViewController: UIViewController {
+    
+
+    @IBOutlet weak var nameTextField: AuthField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        nameTextField.inputType = .name
+        nameTextField.checkField()
+    }
+    
+}
+```
+#### Default Properties
+
+public var inputType: InputTypeSelection? 
+public var isOptional = false 
+public var animationType: AnimationTypeSelection = .shake 
+public var noticeBorderColor: UIColor = .red 
+public var textColor: UIColor = .lightGray 
+public var inputColor: UIColor = .lightGray 
+
+private var labelFontSmall: UIFont = .systemFont(ofSize: 12)  //Avaliable to change just for custom input type.
+private var labelFontLarge: UIFont = .boldSystemFont(ofSize: 15)  //Avaliable to change just for custom input type.
+private var minCharacter: Int = 3  //Avaliable to change just for custom input type. For e-mail validation it check does it in mail format.
 
 #### Animations 
+
+For animation type we have 3 types. Shake, pulse and flash. If you don't want any animation you have to select .animationType = .none
 
 <img src="https://github.com/ferhanakkan/Weather-App/blob/master/Weather%20App/Assets.xcassets/animation.dataset/animation.gif" width="220" height="400"/>
 

@@ -68,6 +68,7 @@ public class AuthField: UIView {
         }
     }// Preset Light Gray Color for Textfield input
     
+    
     private lazy var centerConstraint = label.centerYAnchor.constraint(equalTo: self.centerYAnchor)
     private lazy var topConstraint = label.centerYAnchor.constraint(equalTo: self.topAnchor)
     
