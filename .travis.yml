@@ -2,8 +2,16 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-osx_image: xcode10.0
+osx_image: xcode11.4
 language: swift
+xcode_workspace: Demirciy.xcworkspace
+xcode_destination: platform=iOS Simulator,name=iPhone 11
+podfile: Podfile
+
+before_install:
+- brew update
+- pod install
+
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
