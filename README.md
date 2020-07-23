@@ -99,7 +99,7 @@ class ViewController: UIViewController {
 
 #### Animations 
 
-[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/animation.dataset/animation.gif)
+![gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/animation.dataset/animation.gif)
 
 ```swift
 import UIKit
@@ -134,7 +134,7 @@ class ViewController: UIViewController {
 ```
 #### Password
 
-[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/password.dataset/password.gif)
+![gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/password.dataset/password.gif)
 
 ```swift 
 import UIKit
@@ -157,7 +157,7 @@ class ViewController: UIViewController {
 ``` 
 #### Email Validation
 
-[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/email.dataset/email.gif)
+![gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/email.dataset/email.gif)
 
 If input type selected e-mail when you gonna validate textfield it will be automatically check e-mail format.
 
@@ -184,7 +184,7 @@ class ViewController: UIViewController {
 
 #### Create Custom AuthField
 
-[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/custom.dataset/custom.gif)
+![gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/custom.dataset/custom.gif)
 
 
 ```swift
