@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AuthTextField'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'AuthTextField is a easy solution for your auth screen. Include lots of template and animations.'
 
 # This description is used to generate tags and improve search results.
