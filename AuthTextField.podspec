@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ferhanakkan' => 'ferhanakkan@gmail.com' }
   s.source           = { :git => 'https://github.com/ferhanakkan/AuthTextField.git', :tag => s.version.to_s }
-   s.social_media_url = 'https://www.linkedin.com/in/ferhanakkan'
+#   s.social_media_url = 'https://www.linkedin.com/in/ferhanakkan'
 
   s.ios.deployment_target = '12.0'
   s.swift_version = "5.0"
