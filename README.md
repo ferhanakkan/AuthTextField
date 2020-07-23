@@ -4,6 +4,8 @@
 <img src='https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/logo.imageset/logo.png' width="200" />
 </p>
 
+AuthTextField allows you to easily create and validate animated textfields on the authentication screens for your applications.
+
 [![CI Status](https://img.shields.io/travis/ferhanakkan/AuthTextField.svg?style=flat)](https://travis-ci.org/ferhanakkan/AuthTextField)
 [![Version](https://img.shields.io/cocoapods/v/AuthTextField.svg?style=flat)](https://cocoapods.org/pods/AuthTextField)
 [![License](https://img.shields.io/cocoapods/l/AuthTextField.svg?style=flat)](https://cocoapods.org/pods/AuthTextField)
