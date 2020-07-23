@@ -119,6 +119,9 @@ class ViewController: UIViewController {
 ```
 #### Default Properties
 
+
+```swift
+
 public var inputType: InputTypeSelection? 
 public var isOptional = false 
 public var animationType: AnimationTypeSelection = .shake 
@@ -129,6 +132,8 @@ public var inputColor: UIColor = .lightGray
 private var labelFontSmall: UIFont = .systemFont(ofSize: 12)  //Avaliable to change just for custom input type.
 private var labelFontLarge: UIFont = .boldSystemFont(ofSize: 15)  //Avaliable to change just for custom input type.
 private var minCharacter: Int = 3  //Avaliable to change just for custom input type. For e-mail validation it check does it in mail format.
+```
+
 
 #### Animations 
 
