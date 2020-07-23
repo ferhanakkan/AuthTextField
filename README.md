@@ -6,7 +6,7 @@
 
 AuthTextField allows you to easily create and validate animated textfields on the authentication screens for your applications.
 
-![gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/animation.dataset/animation.gif)
+![gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/general.dataset/general.gif)
 
 [![CI Status](https://img.shields.io/travis/ferhanakkan/AuthTextField.svg?style=flat)](https://travis-ci.org/ferhanakkan/AuthTextField)
 [![Version](https://img.shields.io/cocoapods/v/AuthTextField.svg?style=flat)](https://cocoapods.org/pods/AuthTextField)
@@ -99,6 +99,8 @@ class ViewController: UIViewController {
 
 #### Animations 
 
+[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/animation.dataset/animation.gif)
+
 ```swift
 import UIKit
 import AuthTextField
@@ -132,6 +134,8 @@ class ViewController: UIViewController {
 ```
 #### Password
 
+[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/password.dataset/password.gif)
+
 ```swift 
 import UIKit
 import AuthTextField
@@ -152,6 +156,8 @@ class ViewController: UIViewController {
 }
 ``` 
 #### Email Validation
+
+[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/email.dataset/email.gif)
 
 If input type selected e-mail when you gonna validate textfield it will be automatically check e-mail format.
 
@@ -177,6 +183,9 @@ class ViewController: UIViewController {
 ``` 
 
 #### Create Custom AuthField
+
+[gitHub](https://github.com/ferhanakkan/AuthTextField/blob/master/Example/Pods/Resources/Assets.xcassets/custom.dataset/custom.gif)
+
 
 ```swift
 import UIKit
