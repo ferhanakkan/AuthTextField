@@ -6,33 +6,38 @@
 //  Copyright (c) 2020 ferhanakkan. All rights reserved.
 //
 
+
+//Programmatically usage
+
 import UIKit
 import AuthTextField
 
 class ViewController: UIViewController {
     
-    let test = AuthField()
+
+    @IBOutlet weak var nameTextField: AuthField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                // Do any additional setup after loading the view, typically from a nib.
-        test.inputType = .password
-        
-        self.view.addSubview(test)
-        test.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            test.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant: 20),
-            test.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,constant: -20),
-            test.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            test.heightAnchor.constraint(equalToConstant: 50)
-
-        ])
+        nameTextField.inputType = .name
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 
+
+//let nameTextfield = AuthField()
+//
+//override func viewDidLoad() {
+//    super.viewDidLoad()
+//    nameTextfield.inputType = .name
+//
+//    self.view.addSubview(nameTextfield)
+//    nameTextfield.translatesAutoresizingMaskIntoConstraints = false
+//    NSLayoutConstraint.activate([
+//        nameTextfield.leadingAnchor.constraint(equalTo: self.view.leadingAnchor,constant: 20),
+//        nameTextfield.trailingAnchor.constraint(equalTo: self.view.trailingAnchor,constant: -20),
+//        nameTextfield.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20),
+//        nameTextfield.heightAnchor.constraint(equalToConstant: 50)
+//
+//    ])
+//}
