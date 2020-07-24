@@ -128,11 +128,30 @@ public var animationType: AnimationTypeSelection = .shake
 public var noticeBorderColor: UIColor = .red 
 public var textColor: UIColor = .lightGray 
 public var inputColor: UIColor = .lightGray 
-
-private var labelFontSmall: UIFont = .systemFont(ofSize: 12)  //Avaliable to change just for custom input type.
-private var labelFontLarge: UIFont = .boldSystemFont(ofSize: 15)  //Avaliable to change just for custom input type.
-private var minCharacter: Int = 3  //Avaliable to change just for custom input type. For e-mail validation it check does it in mail format.
+public var labelFontSmall: UIFont = .systemFont(ofSize: 12)  
+public var labelFontLarge: UIFont = .boldSystemFont(ofSize: 15)  
+public var minCharacter: Int = 3 
+public var isDeleteButtonAvaliable = false
 ```
+
+#### Delete Button
+
+Add your textfield a delete button and set buttons color.
+```swift 
+import UIKit
+import AuthTextField
+
+class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        passwordTextField.inputType = .password
+        passwordTextField.isDeleteButtonAvaliable = false
+        passwordTextField.deleteButtonColor = .blue
+    }
+    
+}
+``` 
 
 
 #### Animations 
@@ -242,7 +261,8 @@ class ViewController: UIViewController {
         customFirstTextField.setCustomAuthField(isOptional: true, animationType: .flash, noticeColor: .red, textColor: .lightGray, textfieldInputColor: .purple, textFieldInputFont: .systemFont(ofSize: 15), titleLabelSmallSizeFont: .systemFont(ofSize: 12), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 15), placeHolderText: "Custom First Optional", requiredMinCharacter: 1)
 
         customSecondTextField.inputType = .custom
-        customSecondTextField.setCustomAuthField(isOptional: false, animationType: .shake, noticeColor: .purple, textColor: .blue, textfieldInputColor: .blue, textFieldInputFont: .boldSystemFont(ofSize: 20), titleLabelSmallSizeFont: .systemFont(ofSize: 15), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 20), placeHolderText: "Custom Second Non Optional", requiredMinCharacter: 3)
+        customTextField.setCustomAuthField(isOptional: true, animationType: .flash, noticeColor: .blue, textColor: .orange, textfieldInputColor: .orange, textFieldInputFont: .boldSystemFont(ofSize: 15), titleLabelSmallSizeFont: .systemFont(ofSize: 12), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 15), placeHolderText: "Custom", requiredMinCharacter: 5, isDeleteButtonAvaliable: false, deleteButtonColor: .blue)
+
     }
     
     @IBAction func validateButtonPressed(_ sender: Any) {

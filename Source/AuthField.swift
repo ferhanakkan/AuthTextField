@@ -14,6 +14,7 @@ import UIKit
 public enum InputTypeSelection {
     case email
     case password
+    case username
     case name
     case surname
     case phone
@@ -34,8 +35,10 @@ public class AuthField: UIView {
     private let borderView = UIView()
     private var showPasswordButton: UIButton?
     private var isPasswordVisiable = false
-    private var labelFontSmall: UIFont = .systemFont(ofSize: 12) 
-    private var labelFontLarge: UIFont = .boldSystemFont(ofSize: 15) {
+    private var cleanButton: UIButton?
+    
+    public var labelFontSmall: UIFont = .systemFont(ofSize: 12)
+    public var labelFontLarge: UIFont = .boldSystemFont(ofSize: 15) {
         didSet {
             label.font = labelFontLarge
         }
@@ -47,27 +50,96 @@ public class AuthField: UIView {
         }
     }
     
-    private var minCharacter: Int = 3
+    public var minCharacter: Int = 3
     
     private var eyeImage: UIImage? = UIImage(named: "eye", in: Bundle(for: AuthField.self), compatibleWith: nil)
     
     private var eyeHiddenImage: UIImage? = UIImage(named: "eyeHidden", in: Bundle(for: AuthField.self), compatibleWith: nil)
+    private var cleanImage: UIImage? = UIImage(named: "close", in: Bundle(for: AuthField.self), compatibleWith: nil)
     
-    public var isOptional = false //Preset false
-    public var animationType: AnimationTypeSelection = .shake  //Preset Shake
-    public var noticeBorderColor: UIColor = .red // Preset Red Border Color
+    public var isOptional = false
+    public var animationType: AnimationTypeSelection = .shake
+    public var noticeBorderColor: UIColor = .red
     public var textColor: UIColor = .lightGray {
         didSet {
             borderView.layer.borderColor = textColor.cgColor
             label.textColor = textColor
         }
-    }// Preset Light Gray Color for text
+    }
+    
     public var inputColor: UIColor = .lightGray {
         didSet {
             textField.textColor = inputColor
         }
-    }// Preset Light Gray Color for Textfield input
+    }
     
+    public var deleteButtonColor: UIColor = .blue {
+        didSet {
+            cleanButton!.setImage(cleanImage!.withRenderingMode(UIImage.RenderingMode.alwaysTemplate), for: .normal)
+            cleanButton?.tintColor = deleteButtonColor
+        }
+    }
+    
+    public var isDeleteButtonAvaliable = false {
+        didSet{
+            if isDeleteButtonAvaliable {
+                cleanButton = UIButton(type: .system)
+                cleanButton?.setBackgroundImage(cleanImage, for: .normal)
+                cleanButton?.addTarget(self, action: #selector(cleanButtonTapped), for: .touchUpInside)
+                cleanButton?.setTitleColor(deleteButtonColor, for: .normal)
+                cleanButton?.translatesAutoresizingMaskIntoConstraints = false
+                borderView.addSubview(cleanButton!)
+                
+                switch inputType {
+                case .password:
+
+                    NSLayoutConstraint.activate([
+                        cleanButton!.centerYAnchor.constraint(equalTo: borderView.centerYAnchor),
+                        cleanButton!.widthAnchor.constraint(equalToConstant: 30),
+                        cleanButton!.heightAnchor.constraint(equalToConstant: 30),
+                        cleanButton!.trailingAnchor.constraint(equalTo: borderView.trailingAnchor, constant: -10)
+                    ])
+                    
+                    passwordTextFieldRightContraintNonDelete.isActive = false
+                    passwordTextFieldRightConstraintWithDelete.isActive = true
+                    self.layoutIfNeeded()
+                    
+                default:
+                    NSLayoutConstraint.activate([
+                        cleanButton!.centerYAnchor.constraint(equalTo: borderView.centerYAnchor),
+                        cleanButton!.widthAnchor.constraint(equalToConstant: 30),
+                        cleanButton!.heightAnchor.constraint(equalToConstant: 30),
+                        cleanButton!.trailingAnchor.constraint(equalTo: borderView.trailingAnchor, constant: -10)
+                    ])
+                    textFieldRightContraintNonDelete.isActive = false
+                    textFieldRightConstarintWithDelete.isActive = true
+                    self.layoutIfNeeded()
+                }
+                
+            } else {
+                switch inputType {
+                case .password:
+                    passwordTextFieldRightConstraintWithDelete.isActive = false
+                    passwordTextFieldRightContraintNonDelete.isActive = true
+                default:
+                    textFieldRightConstarintWithDelete.isActive = false
+                    textFieldRightContraintNonDelete.isActive = true
+                }
+                cleanButton!.removeFromSuperview()
+                cleanButton = nil
+                self.layoutIfNeeded()
+            }
+        }
+    }
+    
+//MARK: - Constraints
+    
+    private lazy var textFieldRightContraintNonDelete = textField.trailingAnchor.constraint(equalTo: borderView.trailingAnchor, constant: -10)
+    private lazy var textFieldRightConstarintWithDelete = textField.trailingAnchor.constraint(equalTo: cleanButton!.leadingAnchor, constant: -10)
+    
+    private lazy var passwordTextFieldRightContraintNonDelete = showPasswordButton!.trailingAnchor.constraint(equalTo: borderView.trailingAnchor, constant: -10)
+    
+    private lazy var passwordTextFieldRightConstraintWithDelete = showPasswordButton!.trailingAnchor.constraint(equalTo: cleanButton!.leadingAnchor, constant: -10)
     
     private lazy var centerConstraint = label.centerYAnchor.constraint(equalTo: self.centerYAnchor)
     private lazy var topConstraint = label.centerYAnchor.constraint(equalTo: self.topAnchor)
@@ -129,12 +201,12 @@ extension AuthField {
             showPasswordButton?.translatesAutoresizingMaskIntoConstraints = false
 
             NSLayoutConstraint.activate([
-
-                showPasswordButton!.trailingAnchor.constraint(equalTo: borderView.trailingAnchor, constant: -5),
                 showPasswordButton!.centerYAnchor.constraint(equalTo: borderView.centerYAnchor),
                 showPasswordButton!.widthAnchor.constraint(equalToConstant: 30),
                 showPasswordButton!.heightAnchor.constraint(equalToConstant: 30),
             ])
+            
+            passwordTextFieldRightContraintNonDelete.isActive = true
             
             NSLayoutConstraint.activate([
                 textField.bottomAnchor.constraint(equalTo: borderView.bottomAnchor, constant: -5),
@@ -149,8 +221,9 @@ extension AuthField {
                 textField.bottomAnchor.constraint(equalTo: borderView.bottomAnchor, constant: -5),
                 textField.leadingAnchor.constraint(equalTo: borderView.leadingAnchor, constant: 10),
                 textField.topAnchor.constraint(equalTo: borderView.topAnchor, constant: 5),
-                textField.trailingAnchor.constraint(equalTo: borderView.trailingAnchor, constant: -10)
             ])
+            
+            textFieldRightContraintNonDelete.isActive = true
 
             switch inputType {
             case .name:
@@ -158,6 +231,9 @@ extension AuthField {
                 self.textField.keyboardType = .namePhonePad
             case .surname:
                 label.text = "Surname"
+                self.textField.keyboardType = .namePhonePad
+            case .username:
+                label.text = "Username"
                 self.textField.keyboardType = .namePhonePad
             case .email:
                 label.text = "E-Mail"
@@ -186,6 +262,10 @@ extension AuthField {
             showPasswordButton!.setBackgroundImage(eyeHiddenImage, for: .normal)
             textField.isSecureTextEntry = true
         }
+    }
+    
+    @objc func cleanButtonTapped() {
+        textField.text?.removeAll()
     }
 }
 
@@ -287,7 +367,7 @@ extension AuthField {
                 label.backgroundColor = .clear
                 label.font = labelFontLarge
                 centerConstraint.isActive = true
-                  topConstraint.isActive = false
+                topConstraint.isActive = false
                 UIView.animate(withDuration: 0.4, animations: {
                     self.layoutIfNeeded()
                 }) { (_) in
@@ -350,6 +430,9 @@ extension AuthField {
             case .custom:
                 textField.text!.count >= minCharacter ? nil : showAnimation()
                 return textField.text!.count >= minCharacter
+            case .username:
+                textField.text!.count >= minCharacter ? nil : showAnimation()
+                return textField.text!.count >= minCharacter
             }
         }
     }
@@ -360,7 +443,7 @@ extension AuthField {
 
 extension AuthField {
     
-    public func setCustomAuthField(isOptional: Bool, animationType: AnimationTypeSelection, noticeColor: UIColor, textColor: UIColor, textfieldInputColor: UIColor, textFieldInputFont: UIFont, titleLabelSmallSizeFont: UIFont, titleLabelLargeSizeFont: UIFont, placeHolderText: String, requiredMinCharacter: Int) {
+    public func setCustomAuthField(isOptional: Bool, animationType: AnimationTypeSelection, noticeColor: UIColor, textColor: UIColor, textfieldInputColor: UIColor, textFieldInputFont: UIFont, titleLabelSmallSizeFont: UIFont, titleLabelLargeSizeFont: UIFont, placeHolderText: String, requiredMinCharacter: Int, isDeleteButtonAvaliable: Bool, deleteButtonColor: UIColor) {
         
         self.inputType = .custom
         self.isOptional = isOptional
@@ -373,6 +456,8 @@ extension AuthField {
         self.labelFontLarge = titleLabelLargeSizeFont
         self.label.text = placeHolderText
         self.minCharacter = requiredMinCharacter
+        self.isDeleteButtonAvaliable = isDeleteButtonAvaliable
+        self.deleteButtonColor = deleteButtonColor
     }
     
 }
