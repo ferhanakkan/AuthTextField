@@ -101,6 +101,7 @@ public class AuthField: UIView {
                     ])
                     
                     passwordTextFieldRightContraintNonDelete.isActive = false
+                    passwordTextFieldRightConstraintWithDelete = showPasswordButton!.trailingAnchor.constraint(equalTo: cleanButton!.leadingAnchor, constant: -10)
                     passwordTextFieldRightConstraintWithDelete.isActive = true
                     self.layoutIfNeeded()
                     
@@ -112,6 +113,7 @@ public class AuthField: UIView {
                         cleanButton!.trailingAnchor.constraint(equalTo: borderView.trailingAnchor, constant: -10)
                     ])
                     textFieldRightContraintNonDelete.isActive = false
+                    textFieldRightConstarintWithDelete = textField.trailingAnchor.constraint(equalTo: cleanButton!.leadingAnchor, constant: -10)
                     textFieldRightConstarintWithDelete.isActive = true
                     self.layoutIfNeeded()
                 }
@@ -126,7 +128,7 @@ public class AuthField: UIView {
                     textFieldRightContraintNonDelete.isActive = true
                 }
                 cleanButton!.removeFromSuperview()
-                cleanButton = nil
+//                cleanButton = nil
                 self.layoutIfNeeded()
             }
         }

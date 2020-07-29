@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: AuthField!
     @IBOutlet weak var customTextField: AuthField!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.inputType = .name
@@ -29,7 +28,7 @@ class ViewController: UIViewController {
         phoneTextField.inputType = .phone
         emailTextField.inputType = .email
         passwordTextField.inputType = .password
-    
+        passwordTextField.isDeleteButtonAvaliable = true
 
         customTextField.inputType = .custom
         customTextField.setCustomAuthField(isOptional: true, animationType: .flash, noticeColor: .blue, textColor: .orange, textfieldInputColor: .orange, textFieldInputFont: .boldSystemFont(ofSize: 15), titleLabelSmallSizeFont: .systemFont(ofSize: 12), titleLabelLargeSizeFont: .boldSystemFont(ofSize: 15), placeHolderText: "Custom", requiredMinCharacter: 5, isDeleteButtonAvaliable: true, deleteButtonColor: .red)
@@ -43,7 +42,6 @@ class ViewController: UIViewController {
         emailTextField.checkField()
         passwordTextField.checkField()
         customTextField.checkField()
-        
     }
 }
 
