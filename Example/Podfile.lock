@@ -1,16 +1,24 @@
 PODS:
-  - AuthTextField (0.1.0)
+  - AuthTextField (0.2.1):
+    - SnapKit (~> 4.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - AuthTextField (from `../`)
+  - SnapKit (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   AuthTextField:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AuthTextField: 199f9a7ef5eeb29be32e69784fdaf0286fb6aa2b
+  AuthTextField: 672d7b71d443e6afc266aa9af087a4b270847c1c
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: aecf22aa85d01aa5492aae15f89757338a369aa2
+PODFILE CHECKSUM: 7116e837103717af9c72a940991e01589995d14b
 
 COCOAPODS: 1.9.3

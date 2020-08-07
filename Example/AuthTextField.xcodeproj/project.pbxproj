@@ -271,10 +271,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AuthTextField_Example/Pods-AuthTextField_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AuthTextField/AuthTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AuthTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

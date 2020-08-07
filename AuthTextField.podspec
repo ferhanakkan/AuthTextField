@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
       "ios": "12.0"
   }
 
-  s.source_files = 'Source/*.{h,m,swift}'
-  s.resource = 'Example/Pods/Resources/**/*'
+  s.source_files = 'AuthTextField/Classes/**/*'
+  s.resource = 'AuthTextField/Resources/*'
   
 #   s.resource_bundles = {
 #     'AuthTextField' => ['AuthTextField/Assets/*.png']
@@ -43,5 +43,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'SnapKit', '~> 4.0'
 end

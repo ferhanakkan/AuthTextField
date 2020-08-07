@@ -1,8 +1,8 @@
 {
   "name": "AuthTextField",
-  "version": "0.1.0",
-  "summary": "A short description of AuthTextField.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.2.1",
+  "summary": "AuthTextField is a easy solution for your auth screen. Include lots of template and animations.",
+  "description": "'AuthTextField is a simple way to create auth screens with nice UI and animations. Its simple to use.'",
   "homepage": "https://github.com/ferhanakkan/AuthTextField",
   "license": {
     "type": "MIT",
@@ -13,10 +13,18 @@
   },
   "source": {
     "git": "https://github.com/ferhanakkan/AuthTextField.git",
-    "tag": "0.1.0"
+    "tag": "0.2.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "12.0"
   },
-  "source_files": "AuthTextField/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "AuthTextField/Classes/**/*",
+  "resources": "AuthTextField/Resources/*",
+  "dependencies": {
+    "SnapKit": [
+      "~> 4.0"
+    ]
+  },
+  "swift_version": "5.0"
 }

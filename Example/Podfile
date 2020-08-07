@@ -2,7 +2,7 @@ use_frameworks!
 
 target 'AuthTextField_Example' do
   pod 'AuthTextField', :path => '../'
-
+  pod 'SnapKit', '~> 4.0'
   target 'AuthTextField_Tests' do
     inherit! :search_paths
 
