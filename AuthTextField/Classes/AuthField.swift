@@ -463,5 +463,9 @@ extension AuthField {
         self.deleteButtonColor = deleteButtonColor
     }
     
+    public func setLabelText(_ text: String) {
+        label.text = text
+    }
+    
 }
 
