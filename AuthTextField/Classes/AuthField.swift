@@ -250,6 +250,25 @@ extension AuthField {
             
         }
     }
+    
+    public func setUnderLineBorder() {
+        
+        borderView.layer.borderColor = UIColor.clear.cgColor
+        borderView.layer.borderWidth = 0
+        borderView.layer.cornerRadius = 0
+        
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0.0, y: borderView.frame.height - 1, width: borderView.frame.width, height: 1.0)
+        bottomLine.backgroundColor = textColor.cgColor
+        borderView.layer.addSublayer(bottomLine)
+    }
+    
+    public func setFourCornerBorder() {
+        borderView.layer.sublayers?.removeLast()
+        borderView.layer.borderColor = textColor.cgColor
+        borderView.layer.borderWidth = 1
+        borderView.layer.cornerRadius = 15
+    }
 }
 
 //MARK: - Button Actions
