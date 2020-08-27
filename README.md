@@ -138,10 +138,11 @@ public func setFourCornerBorder() // Preset 4 corner border style
 public func setUnderLineBorder()  // Just sets underline border style
 
 
-// If you are using localization on your app's then you have to use this func 
-Example usage
-->  emailInput.setLabelText("AuthViewController.RegisterCollectionViewCell.emailTitle".localized())
-public func setLabelText(String) 
+public func setLabelText(String)  // If you are using localization on your app's then you have to use this func 
+
+Example usage ->  emailInput.setLabelText("AuthViewController.RegisterCollectionViewCell.emailTitle".localized())
+
+
 ```
 
 #### Delete Button
