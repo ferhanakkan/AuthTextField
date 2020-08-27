@@ -132,6 +132,16 @@ public var labelFontSmall: UIFont = .systemFont(ofSize: 12)
 public var labelFontLarge: UIFont = .boldSystemFont(ofSize: 15)  
 public var minCharacter: Int = 3 
 public var isDeleteButtonAvaliable = false
+
+
+public func setFourCornerBorder() // Preset 4 corner border style
+public func setUnderLineBorder()  // Just sets underline border style
+
+
+// If you are using localization on your app's then you have to use this func 
+Example usage
+->  emailInput.setLabelText("AuthViewController.RegisterCollectionViewCell.emailTitle".localized())
+public func setLabelText(String) 
 ```
 
 #### Delete Button

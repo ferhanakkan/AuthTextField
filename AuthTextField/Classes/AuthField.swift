@@ -393,7 +393,6 @@ extension AuthField {
                 UIView.animate(withDuration: 0.4, animations: {
                     self.layoutIfNeeded()
                 }) { (_) in
-                    print("Animation Completed!!!")
                 }
             }
         }
